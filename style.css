@@ -20,7 +20,11 @@ body{
     font-size: 1.5rem;
 }
 
-.navbar-links  ul {
+.navbar-links{
+    height: 100%;
+}
+
+.navbar-links ul {
     margin: 0px;
     padding: 0px;
     display:flex;
@@ -61,17 +65,19 @@ body{
 }
 
 @media (max-width: 800px){
-    .toggle-btn {
-        display: flex;
-    }
-    .navbar-links {
-        width: 100%;
-    }
     .navbar {
         flex-direction: column;
         align-items: flex-start;
         
     }
+    .toggle-btn {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    
     .navbar-links ul {
         flex-direction: column;
         width: 100%;
